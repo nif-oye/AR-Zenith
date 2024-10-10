@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../Styles/line-ber-nav.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- library -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <title>AR Zenith</title>
+  </head>
+
+  <body>
+    <h1 class="hero-header orbitron-header">AR Zenith</h1>
+    <!-- <section class="hero">
+      <div class="hero-model-viewer">
+        <model-viewer
+          class="hero-mountain"
+          camera-controls
+          src="../Models/gangnam_style_dancing_rabbit_character.glb"
+          alt="Gangam style dancing rabbit character"
+          autoplay
+          shadow-intensity="1"
+          min-camera-orbit="-45deg 45deg 7.033m"
+          max-camera-orbit="45deg 135deg auto"
+        ></model-viewer>
+      </div>
+    </section> -->
+
+    <section class="ar-info-content">
+      <h2 class="orbitron-sub-header">Augmented Reality: Blending Worlds</h2>
+      <div class="ar-info">
+        <div class="ar-info-text">
+          <h3 class="orbitron-small-header">Merging Pixels with Reality</h3>
+          <p class="montserrat-alternates-regular">
+            Augmented Reality (AR) is the digital wizardry that blurs the line
+            between the real and virtual. Instead of diving headfirst into an
+            alternate universe like Virtual Reality (VR), AR sprinkles digital
+            magic into our world, overlaying interactive 3D elements onto your
+            everyday surroundings. Whether through smartphones, glasses, or
+            fancy headsets, AR lets you play in a space where the real world
+            meets the digital frontier.
+          </p>
+          <h3 class="orbitron-small-header">
+            From Stark Tech to Pocket Monsters
+          </h3>
+          <p class="montserrat-alternates-regular">
+            AR wasn't always a reality; it began as the brainchild of sci-fi
+            visionaries. Remember Tony Stark's holographic, flick-of-the-wrist
+            interfaces in Iron Man? That heads-up display was the blueprint for
+            what we now know as AR. Minority Report took it up a notch,
+            imagining a future where entire cities run on augmented reality,
+            with people waving through holograms and controlling digital
+            interfaces midair. Fast forward to today, and those wild fantasies
+            have materialized in the form of Google Glass (RIP), and the AR
+            sensation Pokémon Go, where we all turned into virtual Pokémon
+            trainers.
+          </p>
+          <h3 class="orbitron-small-header">Not Just for Gamers</h3>
+          <p class="montserrat-alternates-regular">
+            AR has officially stepped out of the movies and into our homes,
+            classrooms, and beyond. In gaming, AR lets us bring monsters into
+            our living rooms. But it's not all fun and games—AR is also
+            transforming industries like architecture and retail. Ever tried to
+            virtually place a couch in your living room? Apps like IKEA Place
+            let you drag-and-drop 3D furniture into your space, giving you a
+            sneak peek at how it'll look IRL. AR is everywhere—from boosting
+            marketing campaigns with interactive ads to reimagining the
+            classroom by layering educational content over the real world. It's
+            more than just a gimmick; it's the future.
+          </p>
+        </div>
+        <div class="ar-info-model">
+          <model-viewer
+            id="robot-model"
+            camera-controls
+            src="../Models/robot.glb"
+            alt="A robot"
+            autoplay
+            shadow-intensity="1"
+            min-camera-orbit="auto auto 5m"
+            max-camera-orbit="45deg 90deg 7m"
+          ></model-viewer>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <h3 class="orbitron-sub-header">Discover</h3>
+
+      <nav class="accordion-navigation">
+        <ul class="accordion-list">
+          <li class="accordion-item" style="--color: var(--color-green)">
+            <a href="/clothing">
+              <img src="../images/clothes.webp" alt="Clothing" />
+              <h2 class="orbitron-explore-items">Clothing</h2>
+            </a>
+          </li>
+          <li class="accordion-item" style="--color: var(--color-gold)">
+            <a href="/shoes">
+              <img src="../images/shoe.webp" alt="Shoes" />
+              <h2 class="orbitron-explore-items">Shoes</h2>
+            </a>
+          </li>
+          <li class="accordion-item" style="--color: var(--color-purple)">
+            <a href="/education">
+              <img src="../images/brain2.webp" alt="Education" />
+              <h2 class="orbitron-explore-items">Education</h2>
+            </a>
+          </li>
+          <li class="accordion-item" style="--color: var(--color-red)">
+            <a href="/vehicles">
+              <img src="../images/car.webp" alt="Vehicles" />
+              <h2 class="orbitron-explore-items">Vehicles</h2>
+            </a>
+          </li>
+          <li class="accordion-item" style="--color: var(--color-blue)">
+            <a href="/accessories">
+              <img src="../images/vision-pro.webp" alt="Accessories" />
+              <h2 class="orbitron-explore-items">Accessories</h2>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="footer">
+        <p>&copy; 2024 <a href="https://github.com/nif-oye" target="_blank">@nif_oye</a>. All rights reserved.</p>
+      </section>
+    </section>
+  </body>
+</html>
