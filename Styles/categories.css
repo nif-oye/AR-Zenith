@@ -9,11 +9,6 @@ body {
   background-color: #f0f0f0;
 }
 
-.explore {
-  padding: 2rem;
-  text-align: center;
-}
-
 .orbitron-sub-header {
   font-optical-sizing: auto;
   font-weight: 400;
@@ -22,15 +17,27 @@ body {
   text-align: center;
   color: #F66B0E;
   margin-bottom: 30px;
-  margin-top: 50px;
+}
+
+.explore {
+  padding: 2rem;
+  text-align: center;
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  text-decoration: none;
+  margin: 0.5rem;
 }
 
 .flip-card {

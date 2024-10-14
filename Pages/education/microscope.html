@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Microscope</title>
+    <link rel="stylesheet" href="../../Styles/styles.css" />
+    <link rel="stylesheet" href="../../Styles/view-product.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- model-viewer library -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <a href="../education.html" class="back-button">&#8592; Back</a>
+    <div class="product-card">
+      <div class="ar-viewer">
+        <model-viewer
+          src="../../Models/Products/education/microscope_swift_sw380b.glb"
+          alt="Student Microscope"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          camera-orbit="145deg 75deg auto"
+          field-of-view="30deg"
+        >
+        </model-viewer>
+      </div>
+      <div class="product-info">
+        <h1 class="product-name">Student Microscope</h1>
+        <p class="product-description">
+          A durable microscope designed for students to explore the micro-world.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
