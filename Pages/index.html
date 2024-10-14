@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/categories.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- library -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <title>AR Zenith</title>
+  </head>
+
+  <body>
+    <h1 class="hero-header orbitron-header">AR Zenith</h1>
+    <section class="ar-info-content">
+      <h2 class="orbitron-sub-header">Augmented Reality: Blending Worlds</h2>
+      <div class="ar-info">
+        <div class="ar-info-text">
+          <h3 class="orbitron-small-header">Merging Pixels with Reality</h3>
+          <p class="montserrat-alternates-regular">
+            Augmented Reality (AR) is the digital wizardry that blurs the line
+            between the real and virtual. Instead of diving headfirst into an
+            alternate universe like Virtual Reality (VR), AR sprinkles digital
+            magic into our world, overlaying interactive 3D elements onto your
+            everyday surroundings. Whether through smartphones, glasses, or
+            fancy headsets, AR lets you play in a space where the real world
+            meets the digital frontier.
+          </p>
+          <h3 class="orbitron-small-header">
+            From Stark Tech to Pocket Monsters
+          </h3>
+          <p class="montserrat-alternates-regular">
+            AR wasn't always a reality; it began as the brainchild of sci-fi
+            visionaries. Remember Tony Stark's holographic, flick-of-the-wrist
+            interfaces in Iron Man? That heads-up display was the blueprint for
+            what we now know as AR. Minority Report took it up a notch,
+            imagining a future where entire cities run on augmented reality,
+            with people waving through holograms and controlling digital
+            interfaces midair. Fast forward to today, and those wild fantasies
+            have materialized in the form of Google Glass (RIP), and the AR
+            sensation Pokémon Go, where we all turned into virtual Pokémon
+            trainers.
+          </p>
+          <h3 class="orbitron-small-header">Not Just for Gamers</h3>
+          <p class="montserrat-alternates-regular">
+            AR has officially stepped out of the movies and into our homes,
+            classrooms, and beyond. In gaming, AR lets us bring monsters into
+            our living rooms. But it's not all fun and games—AR is also
+            transforming industries like architecture and retail. Ever tried to
+            virtually place a couch in your living room? Apps like IKEA Place
+            let you drag-and-drop 3D furniture into your space, giving you a
+            sneak peek at how it'll look IRL. AR is everywhere—from boosting
+            marketing campaigns with interactive ads to reimagining the
+            classroom by layering educational content over the real world. It's
+            more than just a gimmick; it's the future.
+          </p>
+        </div>
+        <div class="ar-info-model">
+          <model-viewer
+            ar
+            id="robot-model"
+            camera-controls
+            src="../Models/robot.glb"
+            alt="A robot"
+            autoplay
+            shadow-intensity="1"
+            min-camera-orbit="auto auto 2m"
+            max-camera-orbit="45deg 90deg 10m"
+          ></model-viewer>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <h3 class="orbitron-sub-header">Discover</h3>
+      <div class="card-container">
+        <a href="../Pages/clothes.html" class="parallelogram-card">
+          <div class="parallelogram-content">
+            <!-- <img src="../images/clothing.webp" alt="Clothing" /> -->
+            <h2>Clothing</h2>
+          </div>
+        </a>
+        <a href="../Pages/shoes.html" class="parallelogram-card">
+          <div class="parallelogram-content">
+            <!-- <img src="../images/shoe-set.webp" alt="Shoes" /> -->
+            <h2>Shoes</h2>
+          </div>
+        </a>
+        <a href="../Pages/education.html" class="parallelogram-card">
+          <div class="parallelogram-content">
+            <!-- <img src="../images/education.webp" alt="Education" /> -->
+            <h2>Education</h2>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>
+        &copy; 2024
+        <a href="https://github.com/nif-oye" target="_blank"><b>@nif_oye</b></a
+        >. All rights reserved.
+      </p>
+    </section>
+  </body>
+</html>

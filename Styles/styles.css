@@ -105,7 +105,7 @@ body {
 
 .ar-info-model {
     width: 50vw;
-    border: 1px solid #F66B0E;
+    /* border: 1px solid #F66B0E; */
 }
 
 .ar-info-content {
@@ -121,9 +121,11 @@ body {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #112B3C;
+    color: #fff;
+    background-color: #112B3C;
     text-align: center;
     padding: 30px 0;
+    margin-top: 30px;
 }
 
 a {

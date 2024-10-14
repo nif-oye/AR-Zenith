@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gold Dress</title>
@@ -10,34 +10,45 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- model-viewer library -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-</head>
-<body>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
     <a href="../clothes.html" class="back-button">&#8592; Back</a>
     <div class="product-card">
-        <div class="ar-viewer">
-            <model-viewer
-                src="../../Models/Products/clothes/gold_dress.glb"
-                alt="Gold Dress"
-                ar
-                ar-modes="webxr scene-viewer quick-look"
-                camera-controls
-                auto-rotate
-                autoplay
-                shadow-intensity="1">
-            </model-viewer>
-        </div>
-        <div class="product-info">
-            <h1 class="product-name">Gold Dress</h1>
-            <p class="product-price">$79.99</p>
-            <p class="product-description">
-                Comfortable and stylish for any occasion.
-            </p>
-        </div>
+      <div class="ar-viewer">
+        <model-viewer
+          src="../../Models/Products/clothes/gold_dress.glb"
+          alt="Gold Dress"
+          ar
+          ar-modes="webxr scene-viewer quick-look"
+          camera-controls
+          auto-rotate
+          autoplay
+          shadow-intensity="1"
+        >
+        </model-viewer>
+      </div>
+
+      <div class="product-info">
+        <h1 class="product-name">Gold Dress</h1>
+        <p class="product-price">$79.99</p>
+        <p class="product-description">
+          Comfortable and stylish for any occasion.
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -7,7 +7,7 @@
 body {
     font-family: "Montserrat Alternates", sans-serif;
     background-color: #f9f9f9;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 h2 {
@@ -67,11 +67,18 @@ h2 {
     font-size: 0.9em;
     color: #666;
     line-height: 1.4em;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
-.back-button {
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .back-button {
     display: inline-block;
-    margin-bottom: 20px;
     font-size: 18px;
     color: #112B3C;
     text-decoration: none;
@@ -79,11 +86,41 @@ h2 {
     padding: 10px 20px;
     border-radius: 5px;
     font-family: "Orbitron", sans-serif;
-}
-
-.back-button:hover {
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
     background-color: #e55d00;
-}
+  }
+  
+  .right-buttons {
+    display: flex;
+    gap: 20px; /* Space between the buttons */
+  }
+  
+  .nav-button {
+    display: inline-block;
+    font-size: 18px;
+    color: #112B3C;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Orbitron", sans-serif;
+    transition: border 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    border-color: #F66B0E;
+    background-color: #f0f0f0;
+  }
+  
+  /* Current page style - adjust depending on the active page */
+  .nav-button.active {
+    border-color: #F66B0E;
+    background-color: #fff;
+  }
+  
 
 .footer{
     font-family: "Montserrat Alternates", sans-serif;
@@ -103,10 +140,38 @@ a{
     .product-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .back-button {
+        margin-bottom: 10px;
+      }
+    
+      .right-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+    
+      .nav-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
 }
 
 @media (max-width: 480px) {
     .product-container {
         grid-template-columns: 1fr;
     }
+    .back-button {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
+    
+      .nav-button {
+        font-size: 16px;
+        padding: 8px 16px;
+      }
 }
