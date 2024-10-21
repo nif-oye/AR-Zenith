@@ -5,8 +5,14 @@ AR Zenith is an immersive e-commerce platform that leverages augmented reality t
 ---
 
 ### Screen Captures
+1. AR Zenith Home Page
 ![AR Zenith Home Page](images/demo1.png)
 
+2. Education Category Page
 ![Education Category Page](images/demo2.png)
 
+3. A product with variant materials
 ![A product with variant materials](images/demo3.png)
+
+4. A product with annotations
+![A product with annotations](images/demo4.png)
